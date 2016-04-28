@@ -1,7 +1,7 @@
-# aws-s3-component [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# amazon-s3-component [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > elastic.io integration component that can read and write to AWS S3
 
-# aws-s3-component
+# amazon-s3-component
 &gt; AWS S3 component for the [elastic.io platform](http://www.elastic.io &#34;elastic.io platform&#34;)
 
 &lt;%- componentDescription -&gt;. If you plan to **deploy it into [elastic.io platform](http://www.elastic.io &#34;elastic.io platform&#34;) you must follow sets of instructions to succseed**. 
@@ -38,9 +38,9 @@ $ git push elasticio master
 Apache-2.0 © [elastic.io GmbH](http://elastic.io)
 
 
-[npm-image]: https://badge.fury.io/js/aws-s3-component.svg
-[npm-url]: https://npmjs.org/package/aws-s3-component
-[travis-image]: https://travis-ci.org/elasticio/aws-s3-component.svg?branch=master
-[travis-url]: https://travis-ci.org/elasticio/aws-s3-component
-[daviddm-image]: https://david-dm.org/elasticio/aws-s3-component.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/elasticio/aws-s3-component
+[npm-image]: https://badge.fury.io/js/amazon-s3-component.svg
+[npm-url]: https://npmjs.org/package/amazon-s3-component
+[travis-image]: https://travis-ci.org/elasticio/amazon-s3-component.svg?branch=master
+[travis-url]: https://travis-ci.org/elasticio/amazon-s3-component
+[daviddm-image]: https://david-dm.org/elasticio/amazon-s3-component.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/elasticio/amazon-s3-component

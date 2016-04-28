@@ -9,5 +9,15 @@
         "viewClass": "TextFieldView"
       }
     }
+  },
+  "actions": {
+    "streamToCsv": {
+      "title": "Stream to CSV",
+      "main": "./lib/actions/streamToCsv.js",
+      "metadata": {
+        "in": "./lib/schemas/streamToCsv.in.json",
+        "out": "./lib/schemas/streamToCsv.out.json"
+      }
+    }
   }
 }

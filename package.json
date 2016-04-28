@@ -1,5 +1,5 @@
 {
-  "name": "aws-s3-component",
+  "name": "amazon-s3-component",
   "version": "0.0.0",
   "description": "elastic.io integration component that can read and write to AWS S3",
   "homepage": "http://elastic.io",
@@ -34,6 +34,6 @@
       "mocha": true
     }
   },
-  "repository": "elasticio/aws-s3-component",
+  "repository": "elasticio/amazon-s3-component",
   "license": "Apache-2.0"
 }
