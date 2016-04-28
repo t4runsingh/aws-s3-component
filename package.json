@@ -20,9 +20,14 @@
     "elasticio-component"
   ],
   "dependencies": {
-    "q": "^1.4.1",
+    "aws-sdk": "^2.2.42",
+    "csv": "^0.4.6",
+    "debug": "^2.2.0",
+    "elasticio-node": "0.0.5",
     "elasticio-sailor-nodejs": "1.1.2",
-    "elasticio-node": "0.0.5"
+    "lodash": "^4.11.1",
+    "q": "^1.4.1",
+    "s3-upload-stream": "^1.0.7"
   },
   "devDependencies": {
     "eslint": "^2.1.0",
