@@ -4,7 +4,19 @@
 # amazon-s3-component
 &gt; AWS S3 component for the [elastic.io platform](http://www.elastic.io &#34;elastic.io platform&#34;)
 
-&lt;%- componentDescription -&gt;. If you plan to **deploy it into [elastic.io platform](http://www.elastic.io &#34;elastic.io platform&#34;) you must follow sets of instructions to succseed**. 
+If you plan to **deploy it into [elastic.io platform](http://www.elastic.io &#34;elastic.io platform&#34;) you must follow sets of instructions to succseed**. 
+
+## What's inside?
+
+Inside this component you will find a generic sample on how to work with AWS S3. Currently a following Triggers / Actions are implemented:
+
+### Stream to CSV
+
+This action creates a set of CSV file on S3 with the content that is passed as an input data:
+
+![image](https://cloud.githubusercontent.com/assets/56208/14977506/aeba418e-1114-11e6-99f8-382e3990fd3c.png)
+
+This action will buffer up to 10000 rows and then flush the stream. It will also create a number of files when configured with the key prefix. For example when key prefix is `foo/bar` then ``foo/bar1.csv`` and ``foo/bar2.csv`` and ``foo/bar3.csv`` will be created.
 
 ## Before you Begin
 
@@ -36,7 +48,6 @@ $ git push elasticio master
 ## License
 
 Apache-2.0 © [elastic.io GmbH](http://elastic.io)
-
 
 [npm-image]: https://badge.fury.io/js/amazon-s3-component.svg
 [npm-url]: https://npmjs.org/package/amazon-s3-component
