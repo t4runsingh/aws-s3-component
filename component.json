@@ -34,7 +34,7 @@
           "required": true
         },
         "csv": {
-          "viewClass": "CSVWriteHeader",
+          "viewClass": "CSVWriteView",
           "label": "CSV Header",
           "placeholder": "Copy and paste here first (header) line of your CSV file here",
           "required": true
