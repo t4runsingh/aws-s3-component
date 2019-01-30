@@ -10,13 +10,40 @@ If you plan to **deploy it into [elastic.io platform](http://www.elastic.io &#34
 
 Inside this component you will find a generic sample on how to work with AWS S3. Currently a following Triggers / Actions are implemented:
 
-### Stream to CSV
+##Actions:
+### Write to File
 
-This action creates a set of CSV file on S3 with the content that is passed as an input data:
+This action creates or rewritees a new file on S3 with the content that is passed as an input attachment.
+The name of the file would be same to the attachment name.
+Be careful: this action can process only one attachment - if it would be more or no attachment at all the execution would fail with exception.
 
-![image](https://cloud.githubusercontent.com/assets/56208/14977506/aeba418e-1114-11e6-99f8-382e3990fd3c.png)
+### Input fields
+ - **Bucket Name** - name of S3 bucket to write file in.
 
-This action will buffer up to 10000 rows and then flush the stream. It will also create a number of files when configured with the key prefix. For example when key prefix is `foo/bar` then ``foo/bar1.csv`` and ``foo/bar2.csv`` and ``foo/bar3.csv`` will be created.
+### Read file
+
+This action reads file from S3 bucket by provided name. The result is storing in the output body (for json or xml) or in the output attachment (for other types).
+File type resolves by it's extension. The name of attachment would be same to filename.
+
+  ### Input fields
+ - **Bucket Name** - name of S3 bucket to read file from.
+ 
+
+### Get filenames
+
+This action gets all names of files which are storing in S3 bucket with provided name. The filenames emits individually.
+
+### Input fields
+  - **Bucket Name** - name of S3 bucket to read filenames (content list).
+  
+
+### Delete File
+
+This action removes file from S3 by provided name in selected bucket. The action will emit single filename of removed file.
+
+### Input fields
+  - **Bucket Name** - name of S3 bucket to delete file from.
+
 
 ## Before you Begin
 
