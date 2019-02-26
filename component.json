@@ -24,7 +24,7 @@
       "fields": {
         "bucketName": {
           "viewClass": "TextFieldView",
-          "label": "Bucket Name",
+          "label": "Default Bucket Name",
           "placeholder": "my-fancy-bucket",
           "required": true
         }
@@ -34,6 +34,10 @@
           "type": "object",
           "properties": {
             "filename": {
+              "type": "string",
+              "required": false
+            },
+            "bucketName": {
               "type": "string",
               "required": false
             }
@@ -48,7 +52,7 @@
       "fields": {
         "bucketName": {
           "viewClass": "TextFieldView",
-          "label": "Bucket Name",
+          "label": "Default Bucket Name",
           "placeholder": "my-fancy-bucket",
           "required": true
         }
@@ -60,6 +64,10 @@
             "filename": {
               "type": "string",
               "required": true
+            },
+            "bucketName": {
+              "type": "string",
+              "required": false
             }
           }
         }
@@ -72,12 +80,21 @@
       "fields": {
         "bucketName": {
           "viewClass": "TextFieldView",
-          "label": "Bucket Name",
+          "label": "Default Bucket Name",
           "placeholder": "my-fancy-bucket",
           "required": true
         }
       },
       "metadata": {
+        "in": {
+          "type": "object",
+          "properties": {
+            "bucketName": {
+              "type": "string",
+              "required": false
+            }
+          }
+        },
         "out": {
           "type": "object",
           "properties": {
@@ -96,7 +113,7 @@
       "fields": {
         "bucketName": {
           "viewClass": "TextFieldView",
-          "label": "Bucket Name",
+          "label": "Default Bucket Name",
           "placeholder": "my-fancy-bucket",
           "required": true
         }
@@ -108,6 +125,10 @@
             "filename": {
               "type": "string",
               "required": true
+            },
+            "bucketName": {
+              "type": "string",
+              "required": false
             }
           }
         },
