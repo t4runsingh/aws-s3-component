@@ -17,7 +17,7 @@ This action creates or rewritees a new file on S3 with the content that is passe
 The name of the file would be same to the attachment name.
 Be careful: this action can process only one attachment - if it would be more or no attachment at all the execution would fail with exception.
 
-### Input fields
+#### Input fields
  - **Bucket Name** - name of S3 bucket to write file in.
 
 ### Read file
@@ -25,7 +25,7 @@ Be careful: this action can process only one attachment - if it would be more or
 This action reads file from S3 bucket by provided name. The result is storing in the output body (for json or xml) or in the output attachment (for other types).
 File type resolves by it's extension. The name of attachment would be same to filename.
 
-  ### Input fields
+  #### Input fields
  - **Bucket Name** - name of S3 bucket to read file from.
  
 
@@ -33,7 +33,7 @@ File type resolves by it's extension. The name of attachment would be same to fi
 
 This action gets all names of files which are storing in S3 bucket with provided name. The filenames emits individually.
 
-### Input fields
+#### Input fields
   - **Bucket Name** - name of S3 bucket to read filenames (content list).
   
 
@@ -41,8 +41,16 @@ This action gets all names of files which are storing in S3 bucket with provided
 
 This action removes file from S3 by provided name in selected bucket. The action will emit single filename of removed file.
 
-### Input fields
+#### Input fields
   - **Bucket Name** - name of S3 bucket to delete file from.
+
+### Generate Redshift Manifest
+
+This action creates a manifest file on S3 with the names of all files in the directory as content
+
+### Archive Redshift Payload
+
+This action reads a manifest and moves the files referenced to an archive directory, along with the manifest
 
 
 ## Before you Begin
