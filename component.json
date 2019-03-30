@@ -142,6 +142,30 @@
           }
         }
       }
+    },
+    "generateRedshiftManifest": {
+      "title": "Generate Redshift Manifest",
+      "description": "Generate JSON text file with references to all files in directory",
+      "main": "./lib/actions/generateManifest.js",
+      "fields": {
+        "bucketName": {
+          "viewClass": "TextFieldView",
+          "label": "Default Bucket Name",
+          "placeholder": "my-fancy-bucket/directory",
+          "required": true
+        }
+      },
+      "metadata": {
+        "in": {
+          "type": "object",
+          "properties": {
+            "bucketName": {
+              "type": "string",
+              "required": false
+            }
+          }
+        }
+      }
     }
   }
 }
