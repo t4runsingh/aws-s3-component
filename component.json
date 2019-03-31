@@ -166,6 +166,30 @@
           }
         }
       }
+    },
+    "archiveRedshiftManifest": {
+      "title": "Archive Redshift Manifest",
+      "description": "Read manifest.txt and move all files to archive directory, then delete manifest",
+      "main": "./lib/actions/archiveManifest.js",
+      "fields": {
+        "bucketName": {
+          "viewClass": "TextFieldView",
+          "label": "Default Bucket Name",
+          "placeholder": "my-fancy-bucket/directory",
+          "required": true
+        }
+      },
+      "metadata": {
+        "in": {
+          "type": "object",
+          "properties": {
+            "bucketName": {
+              "type": "string",
+              "required": false
+            }
+          }
+        }
+      }
     }
   }
 }
