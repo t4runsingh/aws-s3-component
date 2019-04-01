@@ -23,7 +23,7 @@ describe('Read file', function () {
     configuration = {
       accessKeyId: process.env.ACCESS_KEY_ID,
       accessKeySecret: process.env.ACCESS_KEY_SECRET,
-      bucketName: 'lloyds-dev',
+      bucketName: 'lloyds-dev/csv',
     };
   });
 
@@ -50,7 +50,7 @@ describe('Read file', function () {
   });
 
   it('reading json', async () => {
-    msg.body = { filename: 'componentConfig.json' };
+    msg.body = { filename: 'Depotumsätze.csv' };
     await readFile.process.call(emitter, msg, configuration, {});
     const result = emitter.emit.getCall(0).args[1];
 
