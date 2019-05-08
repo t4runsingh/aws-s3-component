@@ -1,4 +1,4 @@
-/* eslint-disable global-require */
+/* eslint-disable global-require,func-names */
 
 const fs = require('fs');
 const chai = require('chai');
