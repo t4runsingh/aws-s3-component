@@ -146,6 +146,7 @@
     "streamToCsv": {
       "deprecated": true,
       "title": "Stream to CSV",
+      "description": "Action is deprecated. Use 'Write file' action instead",
       "main": "./lib/actions/streamToCsv.js",
       "fields": {
         "bucketName": {
