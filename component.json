@@ -142,6 +142,34 @@
           }
         }
       }
+    },
+    "streamToCsv": {
+      "deprecated": true,
+      "title": "Stream to CSV",
+      "main": "./lib/actions/streamToCsv.js",
+      "fields": {
+        "bucketName": {
+          "viewClass": "TextFieldView",
+          "label": "Bucket Name",
+          "placeholder": "my-fancy-bucket",
+          "required": true
+        },
+        "keyName": {
+          "viewClass": "TextFieldView",
+          "label": "Key Name",
+          "placeholder": "/foo/file.csv",
+          "required": true
+        },
+        "csv": {
+          "viewClass": "CSVWriteView",
+          "label": "CSV Header",
+          "placeholder": "Copy and paste here first (header) line of your CSV file here",
+          "required": true
+        }
+      },
+      "metadata": {
+        "in": {}
+      }
     }
   }
 }
