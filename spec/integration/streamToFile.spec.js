@@ -7,7 +7,7 @@ const sinon = require('sinon');
 
 const { expect } = chai;
 
-const streamToCsv = require('../../lib/actions/streamToFile');
+const streamToFile = require('../../lib/actions/streamToFile');
 
 describe('Insert file', function () {
   this.timeout(50000);
@@ -42,7 +42,7 @@ describe('Insert file', function () {
     nock('https://attachment.url.loc/', { encodedQueryParams: true })
       .get('/someof').reply(200, testInput);
 
-    await streamToCsv.process.call(emitter, msg, configuration, {});
+    await streamToFile.process.call(emitter, msg, configuration, {});
     const result = emitter.emit.getCall(0).args[1];
     expect(Object.keys(result.body)[0]).to.eql('ETag');
   });
