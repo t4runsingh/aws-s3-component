@@ -4,8 +4,8 @@
 * Add `Read file` action
 * Add `Get filenames` action
 * Add `Delete file` action
-* Updated versions of dependencies
-* Updated README.md
+* Update versions of dependencies
+* Update README.md
 
 ## 1.0.0 (April 28, 2016)
 

@@ -17,6 +17,7 @@ Following actions are inside:
 
 ### Completeness Matrix
 ![image](https://user-images.githubusercontent.com/40201204/59497932-15e74b00-8e9d-11e9-9e9b-095dd8c4c7ec.png)
+
 [Completeness Matrix](https://docs.google.com/spreadsheets/d/1LhKgsTvF32YAmBRh742YxnkrMEGlPEERJc9B6pj4L6E/edit#gid=0)
 
 ### How works. API version / SDK version  
