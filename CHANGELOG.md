@@ -1,0 +1,12 @@
+## 1.1.0 (June 18, 2019)
+
+* Add `Write file` action
+* Add `Read file` action
+* Add `Get filenames` action
+* Add `Delete file` action
+* Updated versions of dependencies
+* Updated README.md
+
+## 1.0.0 (April 28, 2016)
+
+* Initial release
