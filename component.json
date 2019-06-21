@@ -17,8 +17,136 @@
     }
   },
   "actions": {
+    "streamToFile": {
+      "title": "Write file",
+      "description": "Put stream as file into S3 bucket",
+      "main": "./lib/actions/streamToFile.js",
+      "fields": {
+        "bucketName": {
+          "viewClass": "TextFieldView",
+          "label": "Default Bucket Name",
+          "placeholder": "my-fancy-bucket",
+          "required": true
+        }
+      },
+      "metadata": {
+        "in": {
+          "type": "object",
+          "properties": {
+            "filename": {
+              "type": "string",
+              "required": false
+            },
+            "bucketName": {
+              "type": "string",
+              "required": false
+            }
+          }
+        }
+      }
+    },
+    "readFile": {
+      "title": "Read file",
+      "description": "Read file from S3 bucket",
+      "main": "./lib/actions/readFile.js",
+      "fields": {
+        "bucketName": {
+          "viewClass": "TextFieldView",
+          "label": "Default Bucket Name",
+          "placeholder": "my-fancy-bucket",
+          "required": true
+        }
+      },
+      "metadata": {
+        "in": {
+          "type": "object",
+          "properties": {
+            "filename": {
+              "type": "string",
+              "required": true
+            },
+            "bucketName": {
+              "type": "string",
+              "required": false
+            }
+          }
+        }
+      }
+    },
+    "getAllFilesInBucket": {
+      "title": "Get filenames",
+      "description": "Emit individually all filenames from S3 bucket",
+      "main": "./lib/actions/getAllFilesInBucket.js",
+      "fields": {
+        "bucketName": {
+          "viewClass": "TextFieldView",
+          "label": "Default Bucket Name",
+          "placeholder": "my-fancy-bucket",
+          "required": true
+        }
+      },
+      "metadata": {
+        "in": {
+          "type": "object",
+          "properties": {
+            "bucketName": {
+              "type": "string",
+              "required": false
+            }
+          }
+        },
+        "out": {
+          "type": "object",
+          "properties": {
+            "filename": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      }
+    },
+    "deleteFile": {
+      "title": "Delete file",
+      "description": "Delete file from S3 bucket",
+      "main": "./lib/actions/deleteObject.js",
+      "fields": {
+        "bucketName": {
+          "viewClass": "TextFieldView",
+          "label": "Default Bucket Name",
+          "placeholder": "my-fancy-bucket",
+          "required": true
+        }
+      },
+      "metadata": {
+        "in": {
+          "type": "object",
+          "properties": {
+            "filename": {
+              "type": "string",
+              "required": true
+            },
+            "bucketName": {
+              "type": "string",
+              "required": false
+            }
+          }
+        },
+        "out": {
+          "type": "object",
+          "properties": {
+            "filename": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      }
+    },
     "streamToCsv": {
+      "deprecated": true,
       "title": "Stream to CSV",
+      "description": "Action is deprecated. Use 'Write file' action instead",
       "main": "./lib/actions/streamToCsv.js",
       "fields": {
         "bucketName": {
