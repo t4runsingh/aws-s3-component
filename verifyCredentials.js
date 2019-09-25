@@ -16,11 +16,12 @@ module.exports = function verifyCredentials(credentials, cb) {
     const s3 = new aws.S3({
       accessKeyId: credentials.accessKeyId,
       secretAccessKey: credentials.accessKeySecret,
+      region: credentials.region 
     });
 
     // eslint-disable-next-line no-use-before-define
-    const data = await s3.listObjects({ Bucket: '' }).promise();
-    debug('Root dir files: %j', data.Contents.forEach(c => c.Key));
+    //const data = await s3.listObjects({ Bucket: '' }).promise();
+    //debug('Root dir files: %j', data.Contents.forEach(c => c.Key));
     console.log('Verification completed');
 
     cb(null, { verified: true });
