@@ -1,4 +1,4 @@
-# aws-s3-component [![CircleCI](https://circleci.com/gh/elasticio/aws-s3-component.svg?style=svg)](https://circleci.com/gh/elasticio/aws-s3-component) [![Dependency Status][daviddm-image]][daviddm-url]
+# aws-s3-component
 ## Table of Contents
 
 * [General information](#general-information)
