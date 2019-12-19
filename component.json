@@ -196,7 +196,7 @@
           "type": "object",
           "properties": {
             "bucketName": {
-              "title":"Bucket Name and Folder",
+              "title":"Bucket Name",
               "type": "string",
               "required": true
             },
