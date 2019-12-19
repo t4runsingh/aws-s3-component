@@ -306,7 +306,7 @@ The action will emit properties of renamed file.
   "type": "object",
   "properties": {
     "bucketName": {
-      "title":"Bucket Name and folder",
+      "title":"Bucket Name",
       "type": "string",
       "required": true
     },
