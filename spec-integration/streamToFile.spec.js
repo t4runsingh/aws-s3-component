@@ -9,7 +9,7 @@ const streamToFile = require('../lib/actions/streamToFile');
 
 const { expect } = chai;
 
-const logger = bunyan.createLogger({ name: 'streamToFile', level: 'trace' });
+const logger = bunyan.createLogger({ name: 'streamToFile', level: 'info' });
 
 const defaultCfg = {
   accessKeyId: process.env.ACCESS_KEY_ID,

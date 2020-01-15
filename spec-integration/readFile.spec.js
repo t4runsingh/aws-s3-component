@@ -1,6 +1,7 @@
 /* eslint-disable func-names */
 const chai = require('chai');
 const sinon = require('sinon');
+const bunyan = require('bunyan');
 const readFile = require('../lib/actions/readFile');
 const { BasicAuthRestClient } = require('../lib/StatelessBasicAuthRestClient');
 require('dotenv').config();
@@ -16,8 +17,11 @@ const defaultCfg = {
 
 const defaultMsg = {};
 
+const logger = bunyan.createLogger({ name: 'readFile', level: 'info' });
+
 const self = {
   emit: sinon.spy(),
+  logger,
 };
 
 describe('readFile', () => {

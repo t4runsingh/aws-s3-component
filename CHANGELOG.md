@@ -1,4 +1,9 @@
-# 1.2.0 (December , 2019)
+# 1.2.1 (December 26, 2019)
+
+## General Changes
+    * Update sailor version to 2.5.4
+    
+# 1.2.0 (December 19, 2019)
 
 ## General Changes
     * Add `Rename file` action

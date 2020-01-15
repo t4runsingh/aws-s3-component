@@ -41,9 +41,16 @@ The component is based on [AWS S3 SDK](https://aws.amazon.com/sdk-for-node-js/ '
 
 #### Environment variables
 For integration-tests is required to specify following environment variables:
+
 `ACCESS_KEY_ID` - access key ID;
+
 `ACCESS_KEY_SECRET` - secret access key.
+
 `REGION` - region.
+
+For debugging purposes there is: 
+
+`LOG_LEVEL` - `trace` | `debug` | `info` | `warning` | `error` that controls logger level.
 
 ## Credentials
 Access keys consist of two parts: an access key ID and a secret access key. 
