@@ -2,8 +2,11 @@
 const chai = require('chai');
 const sinon = require('sinon');
 const bunyan = require('bunyan');
-const readFile = require('../lib/actions/readFile');
-const { BasicAuthRestClient } = require('../lib/StatelessBasicAuthRestClient');
+
+process.env.ATTACHMENT_MAX_SIZE = 100000000;
+
+const readFile = require('../../lib/actions/readFile');
+const { BasicAuthRestClient } = require('../../lib/StatelessBasicAuthRestClient');
 require('dotenv').config();
 
 const { expect } = chai;
