@@ -30,6 +30,7 @@
   "dependencies": {
     "@elastic.io/component-commons-library": "1.1.5",
     "@elastic.io/oih-standard-library": "1.1.4",
+    "@openintegrationhub/ferryman": "^1.1.5",
     "aws-sdk": "2.683.0",
     "bunyan": "1.8.12",
     "co": "4.6.0",
